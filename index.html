@@ -2,46 +2,89 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ひとやすみ工房 | Hitoyasumi Koubou</title>
-<meta name="description" content="個人開発のゲーム工房「ひとやすみ工房」のページです。Indie game studio Hitoyasumi Koubou.">
-<style>
-  :root { --bg:#0b1020; --card:#141b33; --text:#e8e6f0; --muted:#a9a6bd; --accent:#f5b54a; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Hiragino Sans","Yu Gothic UI",sans-serif; line-height:1.7; }
-  main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
-  h1 { font-size:1.8rem; margin:0 0 4px; }
-  .en { color:var(--muted); font-size:.95rem; margin:0 0 32px; }
-  section { background:var(--card); border-radius:14px; padding:20px; margin:0 0 20px; }
-  h2 { font-size:1.15rem; margin:0 0 8px; color:var(--accent); }
-  p { margin:0 0 8px; }
-  a { color:var(--accent); }
-  ul { margin:0; padding-left:1.2em; }
-  footer { color:var(--muted); font-size:.85rem; text-align:center; margin-top:32px; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ひとやすみ工房｜Hitoyasumi Koubou</title>
+<meta name="description" content="個人でゲームを作っている小さな工房「ひとやすみ工房」のサイトです。放置ギルドRPG「深淵のクロニクル」を作っています。">
+<link rel="canonical" href="https://hitoyasumi-koubou.github.io/">
+<link rel="alternate" hreflang="ja" href="https://hitoyasumi-koubou.github.io/">
+<link rel="alternate" hreflang="en" href="https://hitoyasumi-koubou.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://hitoyasumi-koubou.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ひとやすみ工房">
+<meta property="og:title" content="ひとやすみ工房｜Hitoyasumi Koubou">
+<meta property="og:description" content="個人でゲームを作っている小さな工房「ひとやすみ工房」のサイトです。放置ギルドRPG「深淵のクロニクル」を作っています。">
+<meta property="og:url" content="https://hitoyasumi-koubou.github.io/">
+<meta property="og:image" content="https://hitoyasumi-koubou.github.io/assets/img/ogp.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@hitoyasumikobo">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/studio.css">
 </head>
-<body>
-<main>
-  <h1>ひとやすみ工房</h1>
-  <p class="en">Hitoyasumi Koubou — an indie game studio</p>
-
-  <section>
-    <h2>深淵のクロニクル ～放置ギルド物語～</h2>
-    <p>落ちぶれたギルドを継ぎ、冒険者たちを送り出して、帰ってきた彼らの物語を読む放置RPG（Android）。</p>
-    <p class="en">Abyss Chronicle: Guild Tales — an idle guild RPG for Android. Send your adventurers out, and read the stories they bring home.</p>
-    <ul>
-      <li><a href="https://play.google.com/store/apps/details?id=jp.hitoyasumikoubou.abysschronicle">Google Play</a></li>
-      <li><a href="https://sites.google.com/view/hitoyasumi-koubou/abyss-chronicle-privacy">プライバシーポリシー / Privacy Policy</a></li>
-      <li><a href="https://sites.google.com/view/hitoyasumi-koubou/abyss-chronicle-terms">利用規約 / Terms of Service</a></li>
-    </ul>
+<body class="studio">
+<a class="skip" href="#main">本文へ移動</a>
+<header class="s-header">
+  <div class="wrap s-header-in">
+    <a class="brand" href="./"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M11 4c-1.5 2 1.5 3 0 5M16 3c-1.5 2 1.5 3 0 5M21 4c-1.5 2 1.5 3 0 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6 12h18v5a8 8 0 0 1-8 8h-2a8 8 0 0 1-8-8z" fill="currentColor"/><path d="M24 14h1.5a3.5 3.5 0 0 1 0 7H23" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 27h22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>ひとやすみ工房</b><small>Hitoyasumi Koubou</small></span></a>
+    <nav class="s-nav" aria-label="作品"><a href="#works">作品</a><a href="#news">お知らせ</a><a href="#about">工房について</a></nav><a class="lang" href="en/" hreflang="en" lang="en">English</a>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <section class="pickup" aria-labelledby="pick-title">
+    <img class="pickup-bg" src="assets/img/kv.jpg" alt="" width="1024" height="572">
+    <div class="pickup-in">
+      <p class="chip">PICK UP</p>
+      <h1 id="pick-title"><span>深淵のクロニクル</span><small>～放置ギルド物語～</small></h1>
+      <p class="pickup-catch">閉じていても、冒険は続く。</p>
+      <p class="pickup-lead">落ちぶれたギルドを継ぎ、冒険者を送り出して物語を読み、百灯の塔に挑む放置RPG。</p>
+      <p class="actions"><a class="btn btn-accent" href="abyss-chronicle/">作品のページへ</a><span class="btn btn-glass is-soon" aria-disabled="true">Google Play で近日公開</span></p>
+      <p class="follow">公開のお知らせは X と Discord で</p>
+    </div>
   </section>
 
-  <section>
-    <h2>お問い合わせ / Contact</h2>
-    <p><a href="mailto:akatsuki.guild.games@gmail.com">akatsuki.guild.games@gmail.com</a></p>
+  <section id="works" class="block" aria-labelledby="works-title">
+    <p class="label">WORKS</p>
+    <h2 id="works-title">作品</h2>
+    <article class="work">
+      <a class="work-art" href="abyss-chronicle/"><img src="assets/img/store/ja/01_hall.jpg" alt="" width="480" height="853" loading="lazy"></a>
+      <div class="work-body">
+        <div class="work-head"><img class="work-icon" src="assets/img/icon-192.png" alt="" width="64" height="64"><div><h3><a href="abyss-chronicle/">深淵のクロニクル ～放置ギルド物語～</a></h3><p class="muted">放置ギルドRPG ／ Android</p></div></div>
+        <p>十年前に帰らなかった先代マスター。残されたギルド「暁の灯」と一冊の本「クロニクル」。冒険者を送り出し、帰ってきた彼らの物語を読む放置RPGです。</p>
+        <ul class="points"><li>閉じていても、派遣・製作・訓練が進む</li><li>性格で変わるセリフと冒険日誌、仲間どうしの絆</li><li>100階の百灯の塔と、週替わりの巨大ボス</li></ul>
+        <ul class="tags"><li>日本語</li><li>English</li><li>アプリ内課金あり</li></ul>
+        <p class="actions"><a class="btn btn-accent" href="abyss-chronicle/">作品のページへ</a><span class="btn btn-line is-soon" aria-disabled="true">Google Play で近日公開</span></p>
+      </div>
+    </article>
   </section>
 
-  <footer>© ひとやすみ工房 / Hitoyasumi Koubou</footer>
+  <section id="news" class="block" aria-labelledby="news-title">
+    <p class="label">NEWS</p>
+    <h2 id="news-title">お知らせ</h2>
+    <ul class="news"><li><time datetime="2026-09-27">2026.09.27</time><span class="tag">お知らせ</span><span class="news-text">公式サイトを公開しました。</span></li><li><time datetime="2026-09-26">2026.09.26</time><span class="tag">お知らせ</span><span class="news-text">公式 Discord サーバー・X・YouTube チャンネルを開設しました。</span></li></ul>
+  </section>
+
+  <section id="about" class="block two" aria-labelledby="about-title">
+    <div>
+      <p class="label">ABOUT</p>
+      <h2 id="about-title">工房について</h2>
+      <p>ひとやすみ工房は、個人でゲームを作っている小さな工房です。</p><p>スマートフォンで、すき間時間に遊べるゲームを作っています。</p>
+    </div>
+    <div class="contact-card">
+      <h3>お問い合わせ</h3>
+      <p>ゲームの感想や不具合のご報告は、公式 Discord かメールでお寄せください。</p>
+      <p class="mail"><a href="mailto:akatsuki.guild.games@gmail.com">akatsuki.guild.games@gmail.com</a></p>
+      <ul class="sns"><li><a href="https://discord.gg/Fvb69Ty5zP">Discord</a></li><li><a href="https://x.com/hitoyasumikobo">X</a></li><li><a href="https://www.youtube.com/@hitoyasumi-koubou">YouTube</a></li></ul>
+    </div>
+  </section>
 </main>
+<footer class="s-footer">
+  <div class="wrap s-footer-in">
+    <p class="foot-links"><a href="abyss-chronicle/">深淵のクロニクル ～放置ギルド物語～</a><a href="https://sites.google.com/view/hitoyasumi-koubou/abyss-chronicle-terms">利用規約</a><a href="https://sites.google.com/view/hitoyasumi-koubou/abyss-chronicle-privacy">プライバシーポリシー</a></p>
+    <p class="muted">© 2026 ひとやすみ工房</p>
+  </div>
+</footer>
 </body>
 </html>

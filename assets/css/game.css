@@ -199,3 +199,29 @@ p { margin: 0 0 .8em; }
   .hero .actions .btn-ghost { flex: 1 1 calc(50% - 6px); padding-inline: 10px; white-space: nowrap; }
   .final .actions .btn-ghost { padding-inline: 14px; white-space: nowrap; }
 }
+
+/* ───── 2026-10-04 スマホの幅の確かめ（CHECK_1004.md）で直した所 ───── */
+/* 上の帯が押す所の大きさの分だけ高くなったので、頁の中の飛び先が帯に隠れないように */
+html { scroll-padding-top: 76px; }
+/* 幅 320 で「ゲームの情報」と「お知らせ・コミュニティ」の欄が右の余白にはみ出さないように（300px より狭いときは画面の幅に合わせる） */
+.two-col { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+/* 幅 320 で英語の題（Abyss Chronicle）が右の余白に食い込まないように（360 より広い幅では今までどおり） */
+.h1-main { font-size: clamp(1.75rem, 9vw, 4.8rem); }
+/* お知らせの札（お知らせ／News）が狭い画面で横いっぱいにのびないように */
+.news .tag { justify-self: start; }
+/* 押す所を高さ 44px 以上に（上の帯の行き先・言語の切り替え・下の帯のリンク。下の帯は見た目の間隔を変えずに押せる所だけ広げる） */
+.g-nav a, .g-header .lang { display: inline-flex; align-items: center; min-height: 44px; }
+.g-footer-in { gap: 0; }
+.foot-links { gap: 0 20px; }
+.foot-links a { display: inline-block; padding: 10px 8px; margin-inline: -8px; }
+/* 日本語の見出しを言葉の途中で折り返さない（「大陸をめぐるメ／インストーリー」「週／替わり」など。対応していない端末では今までどおり） */
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) .final-title { word-break: auto-phrase; }
+/* いちばん下の題は、題と副題の間でだけ折り返す（「～／放置ギルド物語～」「Guild／Tales」のように切らない） */
+.final-title .nw { display: inline-block; }
+/* 公開の日の形の2段目（X でフォロー・予告映像を見る）も、小さく見せたまま押す所は高さ 44px に（前は 40px） */
+.follow-row .btn { min-height: 44px; }
+@media (max-width: 720px) {
+  /* 上の帯の行き先が横に送れることが分かるように、右の端をうすくする（送り切ると、うすい所は空きになる） */
+  .g-nav { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 24px), transparent); }
+  .g-nav::after { content: ''; flex: 0 0 20px; }
+}
